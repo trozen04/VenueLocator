@@ -106,7 +106,9 @@ class _HomeScreenState extends State<HomeScreen> {
   void _onScroll() {
     if (_scrollController.position.pixels >= _scrollController.position.maxScrollExtent - 100) {
       if ((_currentPage * _itemsPerPage) < filteredVenues.length && !_isLoadingMore) {
-        setState(() => _isLoadingMore = true);
+        setState(() {
+          _isLoadingMore = true;
+        });
         Future.delayed(const Duration(milliseconds: 300), () {
           setState(() {
             _currentPage++;

@@ -14,8 +14,6 @@ dependencies:
     sdk: flutter
   supabase_flutter:
   geolocator:
-  google_fonts:
-  flutter_svg:
   vector_math:
   sign_in_with_apple: ^7.0.1
   # The following adds the Cupertino Icons font to your application.
